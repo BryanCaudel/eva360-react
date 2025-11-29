@@ -1,0 +1,144 @@
+[2025-11-25T03:08:33.176Z] INFO  API escuchando en http://localhost:3001 | {"port":3001}
+[2025-11-25T03:08:33.898Z] INFO  API escuchando en http://localhost:3001 | {"port":3001}
+[2025-11-25T03:10:02.428Z] INFO  REQUEST | {"method":"GET","url":"/admin/codigos","ip":"::1"}
+[2025-11-25T03:10:07.311Z] INFO  REQUEST | {"method":"GET","url":"/admin/evaluaciones","ip":"::1"}
+[2025-11-25T03:10:09.544Z] INFO  REQUEST | {"method":"GET","url":"/admin/evaluaciones-por-evaluado","ip":"::1"}
+[2025-11-25T03:28:03.611Z] INFO  REQUEST | {"method":"POST","url":"/admin/codigos","ip":"::1"}
+[2025-11-25T03:28:03.635Z] INFO  Código creado | {"endpoint":"/admin/codigos","id":4,"codigo":"JDI251"}
+[2025-11-25T03:28:04.991Z] INFO  API escuchando en http://localhost:3001 | {"port":3001}
+[2025-11-25T03:28:58.043Z] INFO  REQUEST | {"method":"POST","url":"/admin/codigos","ip":"::1"}
+[2025-11-25T03:28:58.061Z] INFO  Código creado | {"endpoint":"/admin/codigos","id":5,"codigo":"SRC801"}
+[2025-11-25T03:31:32.448Z] INFO  REQUEST | {"method":"POST","url":"/captura/sesion","ip":"::1"}
+[2025-11-25T03:31:32.454Z] WARN  Código no encontrado o inactivo | {"code":404,"endpoint":"/captura/sesion","codigo":"123123"}
+[2025-11-25T03:31:59.850Z] INFO  REQUEST | {"method":"POST","url":"/captura/sesion","ip":"::1"}
+[2025-11-25T03:31:59.887Z] INFO  Sesión creada | {"endpoint":"/captura/sesion","sesion_id":5,"codigo":"ABC123"}
+[2025-11-25T03:32:02.198Z] INFO  REQUEST | {"method":"POST","url":"/captura/respuestas","ip":"::1"}
+[2025-11-25T03:32:02.216Z] INFO  Respuestas guardadas | {"endpoint":"/captura/respuestas","sesion_id":5,"inserted":1,"updated":0}
+[2025-11-25T03:32:02.232Z] INFO  REQUEST | {"method":"POST","url":"/captura/finalizar","ip":"::1"}
+[2025-11-25T03:32:02.247Z] INFO  Sesión finalizada | {"endpoint":"/captura/finalizar","sesion_id":5}
+[2025-11-25T03:32:35.911Z] INFO  REQUEST | {"method":"POST","url":"/admin/codigos","ip":"::1"}
+[2025-11-25T03:32:35.965Z] INFO  Código creado | {"endpoint":"/admin/codigos","id":6,"codigo":"PMN475"}
+[2025-11-25T03:32:37.624Z] INFO  REQUEST | {"method":"POST","url":"/admin/codigos","ip":"::1"}
+[2025-11-25T03:32:37.674Z] INFO  Código creado | {"endpoint":"/admin/codigos","id":7,"codigo":"RKD589"}
+[2025-11-25T03:32:39.038Z] INFO  REQUEST | {"method":"POST","url":"/admin/codigos","ip":"::1"}
+[2025-11-25T03:32:39.081Z] INFO  Código creado | {"endpoint":"/admin/codigos","id":8,"codigo":"MSK399"}
+[2025-11-25T03:32:41.521Z] INFO  REQUEST | {"method":"GET","url":"/admin/evaluaciones","ip":"::1"}
+[2025-11-25T03:32:45.179Z] INFO  REQUEST | {"method":"GET","url":"/admin/evaluaciones-por-evaluado","ip":"::1"}
+[2025-11-25T03:33:15.660Z] INFO  REQUEST | {"method":"POST","url":"/captura/sesion","ip":"::1"}
+[2025-11-25T03:33:15.694Z] INFO  Sesión creada | {"endpoint":"/captura/sesion","sesion_id":6,"codigo":"ABC123"}
+[2025-11-25T03:33:25.502Z] INFO  REQUEST | {"method":"POST","url":"/captura/sesion","ip":"::1"}
+[2025-11-25T03:33:25.528Z] INFO  Sesión creada | {"endpoint":"/captura/sesion","sesion_id":7,"codigo":"ABC123"}
+[2025-11-25T03:35:42.413Z] INFO  API escuchando en http://localhost:3001 | {"port":3001}
+[2025-11-25T03:36:35.653Z] INFO  REQUEST | {"method":"POST","url":"/","ip":"::1"}
+[2025-11-25T03:36:35.656Z] WARN  Ruta no encontrada | {"code":404,"endpoint":"/","method":"POST"}
+[2025-11-25T03:37:13.179Z] INFO  REQUEST | {"method":"POST","url":"/captura/respuestas","ip":"::1"}
+[2025-11-25T03:37:13.180Z] WARN  token_sesion requerido | {"code":400,"endpoint":"/captura/respuestas"}
+[2025-11-25T03:37:18.093Z] ERROR Excepción no controlada | Expected property name or '}' in JSON at position 1 | SyntaxError: Expected property name or '}' in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at parse (C:\Eva360\back\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Eva360\back\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (C:\Eva360\back\node_modules\raw-body\index.js:238:16)
+    at done (C:\Eva360\back\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Eva360\back\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[2025-11-25T03:37:23.290Z] INFO  REQUEST | {"method":"POST","url":"/captura/respuestas","ip":"::1"}
+[2025-11-25T03:37:23.291Z] WARN  token_sesion requerido | {"code":400,"endpoint":"/captura/respuestas"}
+[2025-11-25T03:38:43.483Z] ERROR Excepción no controlada | Unexpected token 'g', "guardarRes"... is not valid JSON | SyntaxError: Unexpected token 'g', "guardarRes"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (C:\Eva360\back\node_modules\body-parser\lib\types\json.js:169:10)
+    at parse (C:\Eva360\back\node_modules\body-parser\lib\types\json.js:86:15)
+    at C:\Eva360\back\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (C:\Eva360\back\node_modules\raw-body\index.js:238:16)
+    at done (C:\Eva360\back\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Eva360\back\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+[2025-11-25T03:38:53.288Z] ERROR Excepción no controlada | Expected property name or '}' in JSON at position 1 | SyntaxError: Expected property name or '}' in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at parse (C:\Eva360\back\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Eva360\back\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (C:\Eva360\back\node_modules\raw-body\index.js:238:16)
+    at done (C:\Eva360\back\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Eva360\back\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[2025-11-25T03:39:25.948Z] ERROR Excepción no controlada | Expected ':' after property name in JSON at position 17 | SyntaxError: Expected ':' after property name in JSON at position 17
+    at JSON.parse (<anonymous>)
+    at parse (C:\Eva360\back\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Eva360\back\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (C:\Eva360\back\node_modules\raw-body\index.js:238:16)
+    at done (C:\Eva360\back\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Eva360\back\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[2025-11-25T03:42:37.298Z] INFO  REQUEST | {"method":"POST","url":"/captura/respuestas","ip":"::1"}
+[2025-11-25T03:42:37.312Z] WARN  Sesión no encontrada | {"code":404,"endpoint":"/captura/respuestas","token_sesion":"TOKEN_FAKE_123"}
+[2025-11-25T03:43:30.395Z] INFO  REQUEST | {"method":"POST","url":"/captura/sesion","ip":"::1"}
+[2025-11-25T03:43:30.453Z] INFO  Sesión creada | {"endpoint":"/captura/sesion","sesion_id":8,"codigo":"ABC123"}
+[2025-11-25T03:43:56.300Z] INFO  REQUEST | {"method":"POST","url":"/captura/respuestas","ip":"::1"}
+[2025-11-25T03:43:56.392Z] INFO  Respuestas guardadas | {"endpoint":"/captura/respuestas","sesion_id":8,"inserted":1,"updated":0}
+[2025-11-25T03:43:56.404Z] INFO  REQUEST | {"method":"POST","url":"/captura/finalizar","ip":"::1"}
+[2025-11-25T03:43:56.425Z] INFO  Sesión finalizada | {"endpoint":"/captura/finalizar","sesion_id":8}
+[2025-11-25T03:44:16.663Z] INFO  REQUEST | {"method":"POST","url":"/captura/finalizar","ip":"::1"}
+[2025-11-25T03:44:16.664Z] WARN  Sesión ya finalizada | {"code":409,"endpoint":"/captura/finalizar","token_sesion":"63f6bd6a0cb1b0a4deab391cf61b85573be5de7e88561457"}
+[2025-11-25T03:44:51.482Z] INFO  REQUEST | {"method":"POST","url":"/captura/sesion","ip":"::1"}
+[2025-11-25T03:44:51.509Z] INFO  Sesión creada | {"endpoint":"/captura/sesion","sesion_id":9,"codigo":"ABC123"}
+[2025-11-25T03:45:01.727Z] INFO  REQUEST | {"method":"POST","url":"/captura/respuestas","ip":"::1"}
+[2025-11-25T03:45:01.728Z] WARN  Hay preguntas fuera de la encuesta | {"code":400,"endpoint":"/captura/respuestas","encuesta_id":1,"ids":[999]}
+[2025-11-25T04:29:02.049Z] INFO  REQUEST | {"method":"POST","url":"/admin/codigos","ip":"::1"}
+[2025-11-25T04:29:02.100Z] INFO  Código creado | {"endpoint":"/admin/codigos","id":9,"codigo":"RHM364"}
+[2025-11-25T04:30:00.829Z] INFO  REQUEST | {"method":"POST","url":"/admin/codigos","ip":"::1"}
+[2025-11-25T04:30:00.856Z] INFO  Código creado | {"endpoint":"/admin/codigos","id":10,"codigo":"QKI378"}
+[2025-11-25T04:30:09.929Z] INFO  REQUEST | {"method":"POST","url":"/captura/sesion","ip":"::1"}
+[2025-11-25T04:30:09.971Z] INFO  Sesión creada | {"endpoint":"/captura/sesion","sesion_id":10,"codigo":"QKI378"}
+[2025-11-25T04:30:17.005Z] INFO  REQUEST | {"method":"POST","url":"/captura/respuestas","ip":"::1"}
+[2025-11-25T04:30:17.036Z] INFO  Respuestas guardadas | {"endpoint":"/captura/respuestas","sesion_id":10,"inserted":3,"updated":0}
+[2025-11-25T04:30:17.048Z] INFO  REQUEST | {"method":"POST","url":"/captura/finalizar","ip":"::1"}
+[2025-11-25T04:30:17.068Z] INFO  Sesión finalizada | {"endpoint":"/captura/finalizar","sesion_id":10}
+[2025-11-25T04:31:31.818Z] INFO  REQUEST | {"method":"POST","url":"/admin/codigos","ip":"::1"}
+[2025-11-25T04:31:31.861Z] INFO  Código creado | {"endpoint":"/admin/codigos","id":11,"codigo":"GID322"}
+[2025-11-25T04:31:37.036Z] INFO  REQUEST | {"method":"POST","url":"/captura/sesion","ip":"::1"}
+[2025-11-25T04:31:37.076Z] INFO  Sesión creada | {"endpoint":"/captura/sesion","sesion_id":11,"codigo":"GID322"}
+[2025-11-25T04:31:40.310Z] INFO  REQUEST | {"method":"POST","url":"/captura/respuestas","ip":"::1"}
+[2025-11-25T04:31:40.340Z] INFO  Respuestas guardadas | {"endpoint":"/captura/respuestas","sesion_id":11,"inserted":3,"updated":0}
+[2025-11-25T04:31:40.352Z] INFO  REQUEST | {"method":"POST","url":"/captura/finalizar","ip":"::1"}
+[2025-11-25T04:31:40.374Z] INFO  Sesión finalizada | {"endpoint":"/captura/finalizar","sesion_id":11}
+[2025-11-25T04:32:32.439Z] INFO  REQUEST | {"method":"POST","url":"/admin/codigos","ip":"::1"}
+[2025-11-25T04:32:32.465Z] INFO  Código creado | {"endpoint":"/admin/codigos","id":12,"codigo":"PTQ339"}
+[2025-11-25T04:32:40.627Z] INFO  REQUEST | {"method":"POST","url":"/admin/codigos","ip":"::1"}
+[2025-11-25T04:32:40.651Z] INFO  Código creado | {"endpoint":"/admin/codigos","id":13,"codigo":"VZO187"}
+[2025-11-28T21:19:18.812Z] INFO  API escuchando en http://localhost:3001 | {"port":3001}
+[2025-11-28T21:19:19.584Z] INFO  API escuchando en http://localhost:3001 | {"port":3001}
+[2025-11-28T21:20:04.823Z] INFO  REQUEST | {"method":"GET","url":"/admin/codigos","ip":"::1"}
+[2025-11-28T21:20:06.458Z] INFO  REQUEST | {"method":"GET","url":"/admin/evaluaciones","ip":"::1"}
+[2025-11-28T21:23:03.638Z] INFO  REQUEST | {"method":"GET","url":"/admin/codigos","ip":"::1"}
+[2025-11-28T21:23:13.571Z] INFO  REQUEST | {"method":"POST","url":"/admin/codigos","ip":"::1"}
+[2025-11-28T21:23:13.590Z] INFO  Código creado | {"endpoint":"/admin/codigos","id":14,"codigo":"ZKR023"}
+[2025-11-28T21:23:14.496Z] INFO  API escuchando en http://localhost:3001 | {"port":3001}
+[2025-11-28T21:23:17.298Z] INFO  REQUEST | {"method":"GET","url":"/admin/codigos","ip":"::1"}
+[2025-11-28T21:23:25.518Z] INFO  REQUEST | {"method":"GET","url":"/admin/evaluaciones","ip":"::1"}
+[2025-11-28T21:26:46.205Z] INFO  REQUEST | {"method":"GET","url":"/admin/evaluaciones","ip":"::1"}
+[2025-11-28T21:26:50.373Z] INFO  REQUEST | {"method":"GET","url":"/admin/codigos","ip":"::1"}
+[2025-11-28T21:28:40.732Z] INFO  REQUEST | {"method":"GET","url":"/admin/codigos","ip":"::1"}
+[2025-11-28T21:28:44.621Z] INFO  REQUEST | {"method":"GET","url":"/admin/evaluaciones-por-evaluado","ip":"::1"}
+[2025-11-28T21:28:46.027Z] INFO  REQUEST | {"method":"GET","url":"/admin/evaluaciones","ip":"::1"}
+[2025-11-28T21:32:58.300Z] INFO  REQUEST | {"method":"GET","url":"/admin/codigos","ip":"::1"}
+[2025-11-28T21:35:23.396Z] INFO  REQUEST | {"method":"GET","url":"/admin/codigos","ip":"::1"}
+[2025-11-28T21:35:25.122Z] INFO  REQUEST | {"method":"GET","url":"/admin/codigos","ip":"::1"}
+[2025-11-28T21:35:26.578Z] INFO  REQUEST | {"method":"GET","url":"/admin/codigos","ip":"::1"}
+[2025-11-28T21:35:27.903Z] INFO  REQUEST | {"method":"GET","url":"/admin/evaluaciones","ip":"::1"}
+[2025-11-28T21:35:29.270Z] INFO  REQUEST | {"method":"GET","url":"/admin/evaluaciones-por-evaluado","ip":"::1"}
+[2025-11-29T00:02:14.585Z] INFO  API escuchando en http://localhost:3001 | {"port":3001}
+[2025-11-29T00:03:00.921Z] INFO  REQUEST | {"method":"GET","url":"/admin/codigos","ip":"::1"}
+[2025-11-29T00:03:03.820Z] INFO  REQUEST | {"method":"GET","url":"/admin/evaluaciones","ip":"::1"}
+[2025-11-29T00:03:05.551Z] INFO  REQUEST | {"method":"GET","url":"/admin/evaluaciones-por-evaluado","ip":"::1"}
+[2025-11-29T00:09:58.507Z] INFO  REQUEST | {"method":"GET","url":"/admin/codigos","ip":"::1"}
+[2025-11-29T00:10:32.911Z] INFO  REQUEST | {"method":"GET","url":"/admin/evaluaciones-por-evaluado","ip":"::1"}
